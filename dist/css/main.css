@@ -20,11 +20,6 @@ body {
   color: hsl(0, 0%, 100%);
   background-color: hsl(0, 0%, 8%);
 }
-@media screen and (max-width: 375px) {
-  body {
-    margin: 3rem 1rem;
-  }
-}
 
 a {
   text-decoration: none;
@@ -44,6 +39,7 @@ h2 {
   background-color: hsl(0, 0%, 12%);
   max-width: 400px;
   padding: 2rem;
+  margin-top: 3rem;
   text-align: center;
   border-radius: 10px;
 }
@@ -87,6 +83,7 @@ h2 {
 
 .attribution {
   text-align: center;
+  margin-bottom: 3rem;
   margin-top: 2rem;
 }
 .attribution .frontend-m {

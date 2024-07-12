@@ -1,4 +1,4 @@
-@import "config", "media-queries", "variables";
+@import "config", "variables";
 
 html {
   font-family: $f-family;
@@ -9,9 +9,6 @@ body {
   place-content: center;
   color: $clr-neutral-1000;
   background-color: $clr-neutral-000;
-  @include mobile{
-    margin: 3rem 1rem;
-  }
 }
 a {
   text-decoration: none;
@@ -30,9 +27,10 @@ h2 {
   background-color: $clr-neutral-100;
   max-width: 400px;
   padding: 2rem;
+  margin-top: 3rem;
   text-align: center;
   border-radius: 10px;
-
+  
   .about-content {
     display: flex;
     flex-direction: column;
@@ -77,6 +75,8 @@ h2 {
 }
 .attribution {
   text-align: center;
+  margin-bottom: 3rem;
+
   margin-top: 2rem;
   .frontend-m {
     color: $clr-primary-500;
