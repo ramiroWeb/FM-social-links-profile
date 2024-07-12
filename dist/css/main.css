@@ -20,6 +20,11 @@ body {
   color: hsl(0, 0%, 100%);
   background-color: hsl(0, 0%, 8%);
 }
+@media screen and (max-width: 375px) {
+  body {
+    margin: 3rem 1rem;
+  }
+}
 
 a {
   text-decoration: none;

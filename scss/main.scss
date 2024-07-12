@@ -1,34 +1,17 @@
-$clr-primary-500: hsl(75, 94%, 57%);
+@import "config", "media-queries", "variables";
 
-$clr-neutral-1000: hsl(0, 0%, 100%);
-$clr-neutral-200: hsl(0, 0%, 20%);
-$clr-neutral-100: hsl(0, 0%, 12%);
-$clr-neutral-000: hsl(0, 0%, 8%);
-
-$f-size: 0.875rem;
-$fw-regular: 400;
-$fw-medium: 600;
-$fw-bold: 700;
-$f-family: "Inter", sans-serif;
-
-*,
-*::after,
-*::before {
-  box-sizing: border-box;
-}
-* {
-  margin: 0;
-  padding: 0;
-}
 html {
   font-family: $f-family;
 }
 body {
   min-height: 100vh;
-    display: grid;
-    place-content: center;
+  display: grid;
+  place-content: center;
   color: $clr-neutral-1000;
   background-color: $clr-neutral-000;
+  @include mobile{
+    margin: 3rem 1rem;
+  }
 }
 a {
   text-decoration: none;
@@ -56,8 +39,8 @@ h2 {
     align-items: center;
 
     .photo-profile {
-        border-radius: 50%;
-        width: 100px;
+      border-radius: 50%;
+      width: 100px;
     }
     .name-profile {
       margin-top: 1rem;
@@ -92,15 +75,15 @@ h2 {
     }
   }
 }
-.attribution{
-    text-align: center;
-    margin-top: 2rem;
-    .frontend-m{
-        color: $clr-primary-500;
-        font-weight: $fw-medium;
-     
-        &:hover{
-        border-bottom: 1px solid $clr-primary-500;
-        }
+.attribution {
+  text-align: center;
+  margin-top: 2rem;
+  .frontend-m {
+    color: $clr-primary-500;
+    font-weight: $fw-medium;
+
+    &:hover {
+      border-bottom: 1px solid $clr-primary-500;
     }
+  }
 }
