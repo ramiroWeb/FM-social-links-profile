@@ -1,0 +1,106 @@
+$clr-primary-500: hsl(75, 94%, 57%);
+
+$clr-neutral-1000: hsl(0, 0%, 100%);
+$clr-neutral-200: hsl(0, 0%, 20%);
+$clr-neutral-100: hsl(0, 0%, 12%);
+$clr-neutral-000: hsl(0, 0%, 8%);
+
+$f-size: 0.875rem;
+$fw-regular: 400;
+$fw-medium: 600;
+$fw-bold: 700;
+$f-family: "Inter", sans-serif;
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-family: $f-family;
+}
+body {
+  min-height: 100vh;
+    display: grid;
+    place-content: center;
+  color: $clr-neutral-1000;
+  background-color: $clr-neutral-000;
+}
+a {
+  text-decoration: none;
+  color: $clr-neutral-1000;
+}
+p {
+  font-size: $f-size;
+}
+
+h1,
+h2 {
+  line-height: 1.4;
+}
+
+.container {
+  background-color: $clr-neutral-100;
+  max-width: 400px;
+  padding: 2rem;
+  text-align: center;
+  border-radius: 10px;
+
+  .about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .photo-profile {
+        border-radius: 50%;
+        width: 100px;
+    }
+    .name-profile {
+      margin-top: 1rem;
+    }
+    .location-profile {
+      font-weight: $fw-medium;
+      font-size: 1.1rem;
+      color: $clr-primary-500;
+      margin-bottom: 1rem;
+    }
+    .description-profile {
+      font-weight: $fw-regular;
+    }
+  }
+
+  .links {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    .link {
+      background-color: $clr-neutral-200;
+      padding: 1rem 0;
+      border-radius: 6px;
+      font-weight: $fw-bold;
+
+      &:hover {
+        background: $clr-primary-500;
+        color: $clr-neutral-000;
+      }
+    }
+  }
+}
+.attribution{
+    text-align: center;
+    margin-top: 2rem;
+    .frontend-m{
+        color: $clr-primary-500;
+        font-weight: $fw-medium;
+     
+        &:hover{
+        border-bottom: 1px solid $clr-primary-500;
+        }
+    }
+}
